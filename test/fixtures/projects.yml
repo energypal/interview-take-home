@@ -1,0 +1,21 @@
+# == Schema Information
+#
+# Table name: projects
+#
+#  id          :integer          not null, primary key
+#  customer_id :integer          not null
+#  country     :string(2)
+#  system_size :integer
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+one:
+  customer: one
+  country: MyString
+  system_size: 1
+
+two:
+  customer: two
+  country: MyString
+  system_size: 1
