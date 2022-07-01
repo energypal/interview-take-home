@@ -17,8 +17,8 @@ class Installer < ApplicationRecord
 
   # Country the installer is operates in
   enum country: {
-    us: 'US', # United States
-    ca: 'CA', # Canada
+    us: 'us', # United States
+    ca: 'ca', # Canada
   }, _prefix: true
   
   # How the installer prices projects

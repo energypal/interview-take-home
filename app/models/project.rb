@@ -17,8 +17,8 @@ class Project < ApplicationRecord
 
   # Country the project is located in
   enum country: {
-    us: 'US', # United States
-    ca: 'CA', # Canada
+    us: 'us', # United States
+    ca: 'ca', # Canada
   }, _prefix: true
 
   # Rough size of the project

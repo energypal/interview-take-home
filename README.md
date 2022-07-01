@@ -4,12 +4,12 @@ Thank you for taking the time to complete this exercise. We are excited that you
 
 This rails application is a basic skeleton of an app that allows customers to submit a solar project and get back quotes.
 
-It already includes a few basic models:
+It already includes a few basic models (see model files for schema):
 
-1. Customer (bin/rails generate model Customer name:string email:string:uniq)
-2. Project (bin/rails generate model Project customer:belongs_to country:string{2} system_size:integer)
-3. Installer (bin/rails generate model Installer name:string active:boolean country:string{2} pricing:integer)
-4. Quote (bin/rails generate model Quote project:belongs_to installer:belongs_to price:decimal{10,2})
+1. Customer
+2. Project
+3. Installer
+4. Quote
 
 
 ## You need to accomplish the following tasks:
@@ -22,7 +22,7 @@ It already includes a few basic models:
 
 3. After the form is correctly submitted, create a React page to list out the quotes and their details.
 
-4. Create any RESTful APIs you may need and connect the frontend to the backend, for example: to capture the form information 
+4. Create any APIs you may need and connect the frontend to the backend, for example: to capture the form information 
     into the correct models or retrieve a list of quotes. No authentication is necessary.
 
 5. Apply form validation and styling to the pages as you see fit. TailwindCSS is preconfigured.
